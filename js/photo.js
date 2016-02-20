@@ -2,7 +2,7 @@ document.addEventListener('load', imageAutoSwipe());
 
 
 function imageAutoSwipe() {
-  var imageFolder = 'https://api.github.com/repos/jfarmer91/test-bs-two/contents/gallery/';
+  var imageFolder = 'https://api.github.com/repos/jfarmer91/house-of-fermentology/contents/gallery/';
 
   var xhttp = new XMLHttpRequest();
   // Send XMLHttpRequest
