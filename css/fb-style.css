@@ -1,0 +1,52 @@
+/*.fb-image-filter {
+  padding: 20px 5px;
+  background: rgba(0,0,0,0.3);
+}*/
+
+.intro .intro-body {
+  background: rgba(0,0,0,0.3);
+}
+
+.fb-download-section-filter {
+  background: rgba(0,0,0,0.3);
+  display: inline-block;
+  padding: 100px 0;
+  height: 100%;
+  width: 100%;
+  /*display: table-cell;*/
+  /*vertical-align: middle;*/
+  /*box-sizing: border-box;*/
+}
+
+.fb-beers-brewery {
+  margin-top: 50px;
+}
+
+.fb-featured-beer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.mc-field-group {
+  padding: 0px 2px 8px 2px;
+}
+
+.fb-email-name {
+  margin-left: 2px;
+}
+
+.fb-subscription-input {
+  width: 95%;
+  padding: 8px 5px;
+  border-radius:0;
+  border: 0px solid black;
+}
+
+.fb-subscription-submit {
+  background-color: #fff;
+  color: #000;
+  width: 95%;
+  padding: 8px 5px;
+  border-radius:0;
+  border: 0px solid black;
+}
