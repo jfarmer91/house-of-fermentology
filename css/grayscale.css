@@ -158,8 +158,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/twobarrels-compressor-crop.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    /*background: url(../img/twobarrels-compressor-crop.jpg) no-repeat bottom center scroll;*/
+    background-color: #002F65;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
