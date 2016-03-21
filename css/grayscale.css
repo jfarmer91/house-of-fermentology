@@ -5,7 +5,8 @@
  */
 @font-face {
  font-family: 'Bellerose';
- src: url('font/HOF_font/Bellerose.ttf');
+ src: url('Bellerose.woff') format('woff'),
+ url('Bellerose.ttf') format('truetype');
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     height: 100%;
     font-family: 'Bellerose', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
+    background-color: #0DFF78;
 }
 
 html {
