@@ -14,7 +14,8 @@ body {
     height: 100%;
     font-family: 'Bellerose', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #0DFF78;
+    background-color: #002F65;
+    /*background-color: #0DFF78;*/
 }
 
 html {
@@ -163,8 +164,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    /*background: url(../img/twobarrels-compressor-crop.jpg) no-repeat bottom center scroll;*/
-    background-color: #002F65;
+    background: url(../background/Tree_Trial1.png) no-repeat bottom center scroll;
+    /*background-color: #002F65;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
