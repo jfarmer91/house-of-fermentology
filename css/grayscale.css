@@ -154,7 +154,7 @@ a:focus {
         border-bottom: 0;
         letter-spacing: 1px;
         background: rgba(221, 223, 212, .8) 0;
-        box-shadow: 0px 10px 50px rgba(221, 223, 212, .8);
+        box-shadow: 0px 35px 50px rgba(221, 223, 212, .8);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
