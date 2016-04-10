@@ -14,7 +14,8 @@ body {
     height: 100%;
     font-family: 'Bellerose', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #002F65;
+    /*background-color: #002F65;*/
+    background-color: #dddfd4;
     /*background-color: #0DFF78;*/
 }
 
