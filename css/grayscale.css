@@ -13,7 +13,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Bellerose', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
+    /*color: #fff;*/
+    color:#173e43;
     /*background-color: #002F65;*/
     background-color: #dddfd4;
     /*background-color: #0DFF78;*/
@@ -85,7 +86,8 @@ a:focus {
     text-transform: uppercase;
     font-family: 'Bellerose', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     /*background-color: #000;*/
-    background-color: #292900;
+    /*background-color: #292900;*/
+    background-color:#173e43;
 }
 
 .navbar-custom .navbar-brand {
@@ -108,7 +110,8 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    /*color: #fff;*/
+    color: #173e43;
 }
 
 .navbar-custom .nav li a {
@@ -121,6 +124,7 @@ a:focus {
     outline: 0;
     color: rgba(255,255,255,.8);
     background-color: transparent;
+    /*background-color:#173e43;*/
 }
 
 .navbar-custom .nav li a:focus,
@@ -146,7 +150,8 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: rgba(221, 223, 212, .9) 0;
+        box-shadow: 0px 5px 5px #888888;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -155,7 +160,8 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #292900;
+        /*background: #292900;*/
+        background-color:#173e43;
     }
 }
 
@@ -185,6 +191,7 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+    color: #173e43; /*jon add*/
 }
 
 @media(min-width:768px) {
