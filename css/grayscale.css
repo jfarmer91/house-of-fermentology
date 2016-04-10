@@ -87,7 +87,8 @@ a:focus {
     font-family: 'Bellerose', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     /*background-color: #000;*/
     /*background-color: #292900;*/
-    background-color:#173e43;
+    /*background-color:#173e43;*/
+    background-color:rgba(221, 223, 212, 1);
 }
 
 .navbar-custom .navbar-brand {
