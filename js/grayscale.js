@@ -39,7 +39,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(44.479085, -73.219984));
+    map.setCenter(new google.maps.LatLng(44.457959, -73.214811));
 });
 
 function init() {
@@ -50,7 +50,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(44.479085, -73.219984), // New York
+        center: new google.maps.LatLng(44.457959, -73.214811), // New York
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -60,96 +60,63 @@ function init() {
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [
-        {
-            "featureType": "poi",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "gamma": 7.18
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "transit.line",
-            "elementType": "geometry",
-            "stylers": [
-                {
-                    "gamma": 0.48
-                }
-            ]
-        },
-        {
-            "featureType": "transit.station",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#4d4946"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        }
+          {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#1CB2BD"
+                  },
+                  {
+                      "saturation": 53
+                  },
+                  {
+                      "lightness": -44
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#1CB2BD"
+                  },
+                  {
+                      "saturation": 40
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#BBDC00"
+                  },
+                  {
+                      "saturation": 80
+                  },
+                  {
+                      "lightness": -20
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          }
       ]
     };
 
@@ -161,11 +128,16 @@ function init() {
     map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/icon/FOAM_ICON_FAVICON-compressor.png';
-    var myLatLng = new google.maps.LatLng(44.479085, -73.219984);
+    var image = {
+      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36.png',
+      // size: new google.maps.Size(32,32),
+      origin: new google.maps.Point(0, 0),
+      // anchor: new google.maps.Point(0, 32)
+    };
+    var myLatLng = new google.maps.LatLng(44.457959, -73.214811);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image
+        icon: image,
     });
 }
