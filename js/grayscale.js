@@ -146,4 +146,13 @@ function init() {
         map: map,
         icon: image,
     });
+
+    // codeAddress();
+    var mapLabel = new google.maps.Label({
+        text: 'Test',
+        position: new google.maps.LatLng(44.457959, -73.214811),
+        map: map,
+        fontSize: 35,
+        align: 'right'
+    });
 }

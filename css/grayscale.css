@@ -154,8 +154,8 @@ a:focus {
         padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: rgba(221, 223, 212, .8) 0;
-        box-shadow: 0px 35px 50px rgba(221, 223, 212, .8);
+        background: 0 0;
+        /*box-shadow: 0px 35px 50px rgba(221, 223, 212, .8);*/
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -177,7 +177,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../background/Tree_Trial1.png) no-repeat bottom center scroll;
+    background: url(../background/Tree_Trial_gray.png) no-repeat bottom center scroll;
     /*background-color: #002F65;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
