@@ -8,19 +8,17 @@
   }
 }
 
-#brewery {
+/*#brewery {
     display: table;
     width: 100%;
     height: auto;
     padding: 100px 0;
-    /*text-align: center;*/
     background: url(../background/twobarrels-compressor-background.png) no-repeat bottom center scroll;
-    /*background-color: #002F65;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+}*/
 
 
 
@@ -38,7 +36,7 @@
 }
 
 /*Beers Section*/
-/*#beers {
+#beers {
   display: table;
   width: 100%;
   height: auto;
@@ -49,7 +47,7 @@
   background-size: cover;
   -o-background-size: cover;
 
-}*/
+}
 
 .beer-div {
   padding: 5px 5px 5px 5px;
