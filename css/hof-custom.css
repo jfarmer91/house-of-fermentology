@@ -7,3 +7,16 @@
     align-items: center;
   }
 }
+
+#about {
+  background-color: #fae596;
+}
+#location {
+  background-color: #3fb0ac;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right:0px;
+  padding-bottom: 30px;
+}
