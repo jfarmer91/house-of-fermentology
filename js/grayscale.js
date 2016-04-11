@@ -116,6 +116,12 @@ function init() {
                       "visibility": "on"
                   }
               ]
+          },
+          {
+            featureType: "poi",
+            stylers: [
+              {visibility: "off"}
+            ]
           }
       ]
     };
