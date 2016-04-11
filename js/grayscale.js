@@ -135,7 +135,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = {
-      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36.png',
+      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36_withtext.png',
       // size: new google.maps.Size(32,32),
       origin: new google.maps.Point(0, 0),
       // anchor: new google.maps.Point(0, 32)
@@ -148,11 +148,11 @@ function init() {
     });
 
     // codeAddress();
-    var mapLabel = new google.maps.Label({
-        text: 'Test',
-        position: new google.maps.LatLng(44.457959, -73.214811),
-        map: map,
-        fontSize: 35,
-        align: 'right'
-    });
+//     var mapLabel = new google.maps.Label({
+//         text: 'Test',
+//         position: new google.maps.LatLng(44.457959, -73.214811),
+//         map: map,
+//         fontSize: 35,
+//         align: 'right'
+//     });
 }

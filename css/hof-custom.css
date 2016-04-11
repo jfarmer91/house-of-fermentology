@@ -7,3 +7,55 @@
     align-items: center;
   }
 }
+
+#about {
+  background-color: #fae596;
+}
+#location {
+  background-color: #3fb0ac;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right:0px;
+  padding-bottom: 30px;
+}
+
+/*Beers Section*/
+.beer-div {
+  padding: 5px 5px 5px 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#green-dot {
+  color: rgb(212,212,150);
+  background-color: rgb(90,35,56);
+}
+
+#orange-dot {
+  color: rgb(241,229,171);
+  background-color: rgb(1,117,130);
+}
+
+#pink-dot {
+  color: rgb(241,206,148);
+  background-color: rgb(8,90,78);
+}
+
+#purple-dot {
+  color: rgb(240,214,157);
+  background-color: rgb(115,124,131);
+}
+
+#red-dot {
+  color: rgb(247,242,176);
+  background-color: rgb(1,38,57);
+}
+
+#yellow-dot {
+  color: rgb(240,237,202);
+  background-color: rgb(0,47,101);
+}
