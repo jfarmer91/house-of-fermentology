@@ -5,3 +5,4 @@
 - soft edges with css http://stackoverflow.com/questions/6964794/soft-edges-using-css
 - box shadow generator http://www.cssmatic.com/box-shadow
 - B0B2A9 - gray background sketch color
+- editing a color in illustrator https://www.quora.com/How-do-I-change-all-of-one-color-to-another-in-Illustrator-CS6
