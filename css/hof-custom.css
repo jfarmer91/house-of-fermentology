@@ -21,7 +21,7 @@
 }*/
 
 .hr-page-breaks {
-  margin-top:50px;
+  /*margin-top:50px;*/
 }
 
 hr.style-eight {
@@ -45,7 +45,8 @@ hr.blue {
   margin-top:5px;
   margin-bottom:5px;
   border-width: 8px;
-  border-color: #3fb0ac;
+  /*border-color: #3fb0ac;*/
+  border-color: #b56969;
 }
 hr.yellow {
   margin-top:10px;
@@ -55,7 +56,7 @@ hr.yellow {
 }
 
 #about {
-  /*background-color: #fae596;*/
+  background-color: #fae596;
 }
 
 #about-container {
@@ -65,7 +66,7 @@ hr.yellow {
   /*background-color: #3fb0ac;*/
 }
 #location {
-  /*background-color: #3fb0ac;*/
+  background-color: #3fb0ac;
 }
 
 .container-fluid {
