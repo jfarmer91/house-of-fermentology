@@ -6,6 +6,14 @@
     display: flex;
     align-items: center;
   }
+
+  .hof-css-navbar-font {
+    font-size:18px;
+  }
+
+  .hof-css-navbar-brand-font {
+    font-size:22px
+  }
 }
 
 /*#brewery {
