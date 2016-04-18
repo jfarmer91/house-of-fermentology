@@ -179,7 +179,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../background/Tree_Double_Gray.png) no-repeat bottom center scroll;
+    /*background: url(../background/Tree_Double_Gray.png) no-repeat bottom center scroll;*/
+    background: url(../background/Tree_Double_lightGray_background.png) no-repeat bottom center scroll;
     /*background-color: #002F65;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
