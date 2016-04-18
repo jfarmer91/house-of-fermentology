@@ -141,10 +141,14 @@ function init() {
       // anchor: new google.maps.Point(0, 32)
     };
     var myLatLng = new google.maps.LatLng(44.457959, -73.214811);
-    var beachMarker = new google.maps.Marker({
+    var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         icon: image,
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
     });
 
     // codeAddress();
