@@ -150,13 +150,144 @@ function init() {
     google.maps.event.addListener(marker, 'click', function() {
       window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
     });
+}
 
-    // codeAddress();
-//     var mapLabel = new google.maps.Label({
-//         text: 'Test',
-//         position: new google.maps.LatLng(44.457959, -73.214811),
-//         map: map,
-//         fontSize: 35,
-//         align: 'right'
-//     });
+// Google Maps Scripts
+var map2 = null;
+// When the window has finished loading create our google map below
+google.maps.event.addDomListener(window, 'load', init2);
+google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(new google.maps.LatLng(44.479085, -73.219984));
+});
+
+function init2() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+        // How zoomed in you want the map to start at (always required)
+        zoom: 15,
+
+        // The latitude and longitude to center the map (always required)
+        center: new google.maps.LatLng(44.479085, -73.219984), // New York
+
+        // Disables the default Google Maps UI components
+        disableDefaultUI: true,
+        scrollwheel: false,
+        draggable: false,
+
+        // How you would like to style the map.
+        // This is where you would paste any style found on Snazzy Maps.
+        styles: [
+        {
+            "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "poi",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "geometry.stroke",
+            "stylers": [
+                {
+                    "gamma": 7.18
+                }
+            ]
+        },
+        {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "road.local",
+            "elementType": "labels.text",
+            "stylers": [
+                {
+                    "visibility": "simplified"
+                }
+            ]
+        },
+        {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "gamma": 0.48
+                }
+            ]
+        },
+        {
+            "featureType": "transit.station",
+            "elementType": "labels.icon",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "all",
+            "stylers": [
+                {
+                    "color": "#4d4946"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#ffffff"
+                }
+            ]
+        }
+      ]
+    };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('map2');
+
+    // Create the Google Map using out element and options defined above
+    map2 = new google.maps.Map(mapElement, mapOptions);
+
+    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+    var image = 'img/icon/FOAM_ICON_FAVICON-compressor.png';
+    var myLatLng = new google.maps.LatLng(44.479085, -73.219984);
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map2,
+        icon: image
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4790851,-73.2199836,15z/data=!4m2!3m1!1s0x0:0xe1cbdbe52021ef94');
+    });
 }
