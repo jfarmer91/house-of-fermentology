@@ -41,7 +41,7 @@ var map2 = null;
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(new google.maps.LatLng(44.457959, -73.214811));
-    mapFoam.setCenter(new google.maps.LatLng(44.479085, -73.219984));
+    map2.setCenter(new google.maps.LatLng(44.479085, -73.219984));
 });
 
 function init() {
