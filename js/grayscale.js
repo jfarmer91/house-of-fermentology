@@ -143,96 +143,69 @@ function init() {
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
         styles: [
-        {
-            "featureType": "poi",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
+          {
+              "featureType": "water",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#1CB2BD"
+                  },
+                  {
+                      "saturation": 53
+                  },
+                  {
+                      "lightness": -44
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#1CB2BD"
+                  },
+                  {
+                      "saturation": 40
+                  }
+              ]
+          },
+          {
+              "featureType": "landscape",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "hue": "#BBDC00"
+                  },
+                  {
+                      "saturation": 80
+                  },
+                  {
+                      "lightness": -20
+                  },
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+              "featureType": "road.highway",
+              "elementType": "all",
+              "stylers": [
+                  {
+                      "visibility": "on"
+                  }
+              ]
+          },
+          {
+            featureType: "poi",
+            stylers: [
+              {visibility: "off"}
             ]
-        },
-        {
-            "featureType": "poi",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "geometry.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "geometry.stroke",
-            "stylers": [
-                {
-                    "gamma": 7.18
-                }
-            ]
-        },
-        {
-            "featureType": "road",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "road.local",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "visibility": "simplified"
-                }
-            ]
-        },
-        {
-            "featureType": "transit.line",
-            "elementType": "geometry",
-            "stylers": [
-                {
-                    "gamma": 0.48
-                }
-            ]
-        },
-        {
-            "featureType": "transit.station",
-            "elementType": "labels.icon",
-            "stylers": [
-                {
-                    "visibility": "off"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "all",
-            "stylers": [
-                {
-                    "color": "#4d4946"
-                }
-            ]
-        },
-        {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [
-                {
-                    "color": "#ffffff"
-                }
-            ]
-        }
+          }
       ]
     };
 
@@ -250,7 +223,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = {
-      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36_withtext.png',
+      url: 'HOF_WEB/HOF_WEB/House_Logo_black_54.png',
       // size: new google.maps.Size(32,32),
       origin: new google.maps.Point(0, 0),
       // anchor: new google.maps.Point(0, 32)
@@ -284,7 +257,7 @@ function init() {
       window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
     });
     google.maps.event.addListener(marker2, 'click', function() {
-      window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
+      window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4790851,-73.2199836,15z/data=!4m2!3m1!1s0x0:0xe1cbdbe52021ef94');
     });
 }
 
