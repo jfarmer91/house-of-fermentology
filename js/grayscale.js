@@ -36,10 +36,12 @@ $('.navbar-collapse ul li a').click(function() {
 
 // Google Maps Scripts
 var map = null;
+var map2 = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
     map.setCenter(new google.maps.LatLng(44.457959, -73.214811));
+    mapFoam.setCenter(new google.maps.LatLng(44.479085, -73.219984));
 });
 
 function init() {
@@ -126,44 +128,7 @@ function init() {
       ]
     };
 
-    // Get the HTML DOM element that will contain your map
-    // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map');
-
-    // Create the Google Map using out element and options defined above
-    map = new google.maps.Map(mapElement, mapOptions);
-
-    // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = {
-      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36_withtext.png',
-      // size: new google.maps.Size(32,32),
-      origin: new google.maps.Point(0, 0),
-      // anchor: new google.maps.Point(0, 32)
-    };
-    var myLatLng = new google.maps.LatLng(44.457959, -73.214811);
-    var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        icon: image,
-    });
-
-    google.maps.event.addListener(marker, 'click', function() {
-      window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
-    });
-}
-
-// Google Maps Scripts
-var map2 = null;
-// When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init2);
-google.maps.event.addDomListener(window, 'resize', function() {
-    map.setCenter(new google.maps.LatLng(44.479085, -73.219984));
-});
-
-function init2() {
-    // Basic options for a simple Google Map
-    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-    var mapOptions = {
+    var mapOptions2 = {
         // How zoomed in you want the map to start at (always required)
         zoom: 15,
 
@@ -271,23 +236,87 @@ function init2() {
       ]
     };
 
+
     // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
-    var mapElement = document.getElementById('map2');
+    var mapElement = document.getElementById('map');
+    var mapElement2 = document.getElementById('map2');
+
 
     // Create the Google Map using out element and options defined above
-    map2 = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions);
+    map2 = new google.maps.Map(mapElement2, mapOptions2);
+
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/icon/FOAM_ICON_FAVICON-compressor.png';
-    var myLatLng = new google.maps.LatLng(44.479085, -73.219984);
+    var image = {
+      url: 'HOF_WEB/HOF_WEB/House_Logo_black_36_withtext.png',
+      // size: new google.maps.Size(32,32),
+      origin: new google.maps.Point(0, 0),
+      // anchor: new google.maps.Point(0, 32)
+    };
+    var image2 = {
+      url: 'img/icon/FOAM_ICON_FAVICON-compressor.png',
+      // size: new google.maps.Size(32,32),
+      origin: new google.maps.Point(0, 0),
+      // anchor: new google.maps.Point(0, 32)
+    };
+
+
+
+    var myLatLng = new google.maps.LatLng(44.457959, -73.214811);
+    var myLatLng2 = new google.maps.LatLng(44.479085, -73.219984);
+
+
     var marker = new google.maps.Marker({
         position: myLatLng,
+        map: map,
+        icon: image,
+    });
+    var marker2 = new google.maps.Marker({
+        position: myLatLng2,
         map: map2,
-        icon: image
+        icon: image2,
     });
 
+
     google.maps.event.addListener(marker, 'click', function() {
-      window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4790851,-73.2199836,15z/data=!4m2!3m1!1s0x0:0xe1cbdbe52021ef94');
+      window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
+    });
+    google.maps.event.addListener(marker2, 'click', function() {
+      window.open('https://www.google.com/maps/place/777+Pine+St,+Burlington,+VT+05401/@44.4579589,-73.2169994,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7ba8ad01ba29:0xb07b66b2c7ad4cae');
     });
 }
+
+// // Google Maps Scripts
+// var map-foam = null;
+// // When the window has finished loading create our google map below
+// google.maps.event.addDomListener(window, 'load', init2);
+// google.maps.event.addDomListener(window, 'resize', function() {
+//     map.setCenter(new google.maps.LatLng(44.479085, -73.219984));
+// });
+//
+// function init2() {
+//     // Basic options for a simple Google Map
+//     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+//
+//     // Get the HTML DOM element that will contain your map
+//     // We are using a div with id="map" seen below in the <body>
+//     var mapElement = document.getElementById('map-foam');
+//
+//     // Create the Google Map using out element and options defined above
+//     map-foam = new google.maps.Map(mapElement, mapOptions);
+//
+//     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
+//     var image = 'img/icon/FOAM_ICON_FAVICON-compressor.png';
+//     var myLatLng = new google.maps.LatLng(44.479085, -73.219984);
+//     var marker = new google.maps.Marker({
+//         position: myLatLng,
+//         map: map-foam,
+//         icon: image
+//     });
+//
+//     google.maps.event.addListener(marker, 'click', function() {
+//       window.open('https://www.google.com/maps/place/Foam+Brewers/@44.4790851,-73.2199836,15z/data=!4m2!3m1!1s0x0:0xe1cbdbe52021ef94');
+//     });
+// }
